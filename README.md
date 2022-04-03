@@ -2,4 +2,4 @@
 
 #### A Demo porfolio created using React.js
 
-[Live Site Link : ](https://link-url-here.org)
+Go to the live site : [https://sr-demo-portfolio.netlify.app/ ](https://sr-demo-portfolio.netlify.app/)
