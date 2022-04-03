@@ -1,0 +1,98 @@
+.bar {
+  width: 100vw;
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ecf0ee;
+}
+
+.bar .logo {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bar .logo h2 {
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 600;
+  font-size: 1.75em;
+  cursor: pointer;
+}
+
+.bar .logo img {
+  cursor: pointer;
+  height: 6rem;
+}
+
+.bar .links {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bar .links ul {
+  list-style-type: none;
+}
+
+.bar .links ul li {
+  display: inline-block;
+  margin-right: 3rem;
+}
+
+.bar .links ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.25em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bar .links ul li a:hover {
+  -webkit-transition: .25s linear;
+  transition: .25s linear;
+  color: #008cff;
+  font-family: 'Fira sans', sans-serif;
+}
+
+.bar .links .menuIcon {
+  width: 2rem;
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .bar {
+    height: 10vh;
+  }
+  .bar .links ul li {
+    margin-right: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bar .links .menuIcon {
+    display: block;
+  }
+  .bar .links .opened {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */

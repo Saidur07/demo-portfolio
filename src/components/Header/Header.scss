@@ -1,0 +1,135 @@
+.Header {
+  width: 100vw;
+  min-height: 72vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .texts,
+  .images {
+    width: 50%;
+    height: 100%;
+  }
+  .texts {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    .text {
+      width: 70%;
+
+      .text-intro {
+        font-size: 2em;
+        color: #6fdaca;
+      }
+      .text-name {
+        color: #1cbdf4;
+        font-size: 3em;
+      }
+    }
+
+    .extra-btn {
+      position: relative;
+      margin: auto;
+      padding: 12px 18px;
+      transition: all 0.2s ease;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+
+    .extra-btn:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      border-radius: 50px;
+      background: #b1dae7;
+      width: 45px;
+      height: 45px;
+      transition: all 0.3s ease;
+    }
+
+    .extra-btn span {
+      position: relative;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      a {
+        color: #234567;
+        text-decoration: none;
+      }
+    }
+
+    .extra-btn svg {
+      position: relative;
+      top: 0;
+      margin-left: 10px;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke: #234567;
+      stroke-width: 2;
+      transform: translateX(-5px);
+      transition: all 0.3s ease;
+    }
+
+    .extra-btn:hover:before {
+      width: 100%;
+      background: #1cbdf4;
+    }
+
+    .extra-btn:hover svg {
+      transform: translateX(0);
+    }
+
+    .extra-btn:active {
+      transform: scale(0.95);
+    }
+  }
+  .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Header {
+    flex-direction: column-reverse;
+    padding: 20px;
+    .texts,
+    .images {
+      width: 100%;
+      height: 50%;
+    }
+    .texts {
+      align-items: center;
+      .text {
+        width: 80%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .Header {
+    .texts {
+      .text {
+        width: 100%;
+        text-align: center;
+        .text-intro {
+          font-size: 1.5em;
+        }
+        .text-name {
+          font-size: 2em;
+        }
+      }
+    }
+    .images {
+      img {
+        width: 80vw;
+      }
+    }
+  }
+}

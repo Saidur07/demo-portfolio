@@ -1,0 +1,169 @@
+.Header {
+  width: 100vw;
+  min-height: 72vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Header .texts,
+.Header .images {
+  width: 50%;
+  height: 100%;
+}
+
+.Header .texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Header .texts .text {
+  width: 70%;
+}
+
+.Header .texts .text .text-intro {
+  font-size: 2em;
+  color: #6fdaca;
+}
+
+.Header .texts .text .text-name {
+  color: #1cbdf4;
+  font-size: 3em;
+}
+
+.Header .texts .extra-btn {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.Header .texts .extra-btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.Header .texts .extra-btn span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.Header .texts .extra-btn span a {
+  color: #234567;
+  text-decoration: none;
+}
+
+.Header .texts .extra-btn svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.Header .texts .extra-btn:hover:before {
+  width: 100%;
+  background: #1cbdf4;
+}
+
+.Header .texts .extra-btn:hover svg {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.Header .texts .extra-btn:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.Header .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .Header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 20px;
+  }
+  .Header .texts,
+  .Header .images {
+    width: 100%;
+    height: 50%;
+  }
+  .Header .texts {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Header .texts .text {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Header .texts .text {
+    width: 100%;
+    text-align: center;
+  }
+  .Header .texts .text .text-intro {
+    font-size: 1.5em;
+  }
+  .Header .texts .text .text-name {
+    font-size: 2em;
+  }
+  .Header .images img {
+    width: 80vw;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

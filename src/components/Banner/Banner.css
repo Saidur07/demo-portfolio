@@ -1,0 +1,104 @@
+.Banner {
+  width: 100vw;
+  min-height: 18vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Banner .banner-section {
+  width: 60%;
+  height: 90%;
+  border-radius: 20px;
+  padding: 20px;
+  background: #ecf0ee;
+  -webkit-box-shadow: -1px 0px 20px 0px #e0e0e0;
+          box-shadow: -1px 0px 20px 0px #e0e0e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Banner .banner-section .box {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.Banner .banner-section .box .box1 {
+  background: #ff99f1;
+  background: linear-gradient(230deg, #ff99f1 33%, #94e9e4 83%);
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 65px;
+}
+
+.Banner .banner-section .box .box2 {
+  background: #99eaff;
+  background: linear-gradient(130deg, #99eaff 33%, #ad94e9 83%);
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 65px;
+}
+
+.Banner .banner-section .box .box3 {
+  background: #ff99ea;
+  background: linear-gradient(330deg, #ff5b87 33%, #94e9db 83%);
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 65px;
+}
+
+.Banner .banner-section .box .box4 {
+  background: #ffd899;
+  background: linear-gradient(225deg, #ffd899 33%, #9497e9 83%);
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 65px;
+}
+
+@media screen and (max-width: 768px) {
+  .Banner .banner-section {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Banner .banner-section {
+    width: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Banner .banner-section .box {
+    margin-bottom: 30px;
+  }
+}
+/*# sourceMappingURL=Banner.css.map */
